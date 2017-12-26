@@ -20,6 +20,7 @@
 		7AD6319F1FEA705B008CE671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6319E1FEA705B008CE671 /* main.m */; };
 		7AD631A91FEA705B008CE671 /* SlideToBackDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD631A81FEA705B008CE671 /* SlideToBackDemoTests.m */; };
 		7AD631B41FEA705B008CE671 /* SlideToBackDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD631B31FEA705B008CE671 /* SlideToBackDemoUITests.m */; };
+		7AE7871E1FED0E8100C4E058 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7871D1FED0E8100C4E058 /* FiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		7AD631AF1FEA705B008CE671 /* SlideToBackDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideToBackDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD631B31FEA705B008CE671 /* SlideToBackDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideToBackDemoUITests.m; sourceTree = "<group>"; };
 		7AD631B51FEA705B008CE671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE7871C1FED0E8100C4E058 /* FiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		7AE7871D1FED0E8100C4E058 /* FiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				7AB2CF301FEC9F390010BD82 /* ThreeViewController.m */,
 				7AB2CF321FECB01C0010BD82 /* FourViewController.h */,
 				7AB2CF331FECB01C0010BD82 /* FourViewController.m */,
+				7AE7871C1FED0E8100C4E058 /* FiveViewController.h */,
+				7AE7871D1FED0E8100C4E058 /* FiveViewController.m */,
 				7AD631951FEA705B008CE671 /* Main.storyboard */,
 				7AD631981FEA705B008CE671 /* Assets.xcassets */,
 				7AD6319A1FEA705B008CE671 /* LaunchScreen.storyboard */,
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE7871E1FED0E8100C4E058 /* FiveViewController.m in Sources */,
 				7AB2CF281FEC9CAA0010BD82 /* BaseViewController.m in Sources */,
 				7AB2CF311FEC9F390010BD82 /* ThreeViewController.m in Sources */,
 				7AB2CF341FECB01C0010BD82 /* FourViewController.m in Sources */,

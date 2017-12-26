@@ -8,8 +8,8 @@
 
 #import "BaseViewController.h"
 #import "TwoViewController.h"
-#import "ThreeViewController.h"
-@interface BaseViewController ()<UINavigationControllerDelegate>
+#import "FourViewController.h"
+@interface BaseViewController ()
 
 @end
 
@@ -58,18 +58,9 @@
 }
 
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.delegate = self;
-    NSLog(@"%@",self);
-}
 
 
-//新的隐藏navgationbar方法  使用代理方法  可以完美解决
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    BOOL isHiddenNavBar = [viewController isKindOfClass:[TwoViewController class]];
-    [self.navigationController setNavigationBarHidden:isHiddenNavBar animated:YES];
-}
+
 
 
 

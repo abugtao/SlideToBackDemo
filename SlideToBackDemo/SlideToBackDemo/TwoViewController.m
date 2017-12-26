@@ -10,7 +10,7 @@
 
 #import "TwoViewController.h"
 #import "ThreeViewController.h"
-@interface TwoViewController ()
+@interface TwoViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -49,8 +49,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.delegate = self;
+}
+//新的隐藏navgationbar方法  使用代理方法  可以完美解决
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    BOOL isHiddenNavBar = [viewController isKindOfClass:[self class]];
+    [self.navigationController setNavigationBarHidden:isHiddenNavBar animated:YES];
 
+    
+}
 
+-(void)dealloc{
+    self.navigationController.delegate = nil;
+}
 
 
 /*
